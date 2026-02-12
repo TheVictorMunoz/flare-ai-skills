@@ -51,13 +51,13 @@ Install skills with a single command:
 
 ```bash
 # Install FAssets skill
-npx skills add https://github.com/fassko/flare-ai-skills --skill flare-fassets
+npx skills add https://github.com/flare-foundation/flare-ai-skills --skill flare-fassets
 
 # Install Smart Accounts skill
-npx skills add https://github.com/fassko/flare-ai-skills --skill flare-smart-accounts
+npx skills add https://github.com/flare-foundation/flare-ai-skills --skill flare-smart-accounts
 ```
 
-For more information, visit the [skills.sh platform page](https://skills.sh/fassko/flare-ai-skills/flare-fassets).
+For more information, visit the [skills.sh platform page](https://skills.sh/flare-foundation/flare-ai-skills/flare-fassets).
 
 Then use the skills in your AI agent, for example:
 
@@ -73,7 +73,7 @@ To install skills for your personal use in Claude Code:
 
 1. Add the marketplace:
  ```
- /plugin marketplace add fassko/flare-ai-skills
+ /plugin marketplace add flare-foundation/flare-ai-skills
  ```
 2. Install the skills:
  ```
@@ -95,7 +95,7 @@ To automatically provide these skills to everyone working in a repository, confi
     "flare-ai-skills": {
       "source": {
         "source": "github",
-        "repo": "fassko/flare-ai-skills"
+        "repo": "flare-foundation/flare-ai-skills"
  }
  }
  }
@@ -152,7 +152,7 @@ Each skill folder (with `SKILL.md` and `reference.md`) can be installed independ
 
 ## Links
 
-- [Install via skills.sh](https://skills.sh/fassko/flare-ai-skills/flare-fassets) — one-command install for Cursor, Claude Code, Codex, and more
+- [Install via skills.sh](https://skills.sh/flare-foundation/flare-ai-skills/flare-fassets) — one-command install for Cursor, Claude Code, Codex, and more
 - [Flare FAssets Overview](https://dev.flare.network/fassets/overview/)
 - [Flare Smart Accounts Overview](https://dev.flare.network/smart-accounts/overview)
 - [Flare Developer Hub](https://dev.flare.network/)
