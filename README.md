@@ -1,7 +1,23 @@
-# Flare Skills — Agent Skills for Flare Development
+<div align="center">
+  <a href="https://flare.network/" target="blank">
+    <img src="https://content.flare.network/Flare-2.svg" width="300" alt="Flare Logo" />
+  </a>
+  <br />
+ Agent Skills for Flare Development
+  <br />
+  <a href="#flare-ai-skills">About</a>
+ ·
+  <a href="CONTRIBUTING.md">Contributing</a>
+ ·
+  <a href="SECURITY.md">Security</a>
+ ·
+  <a href="CHANGELOG.md">Changelog</a>
+</div>
+
+# Flare AI Skills
 
 A collection of Agent Skills for **Cursor**, **Claude Code**, and other [skills.sh](https://skills.sh/)-compatible agents.
-Provides domain knowledge and guidance for **[Flare](https://flare.network/)** development including FAssets, Smart Accounts, and more.
+Provides domain knowledge and guidance for **[Flare](https://flare.network/)** development, including FAssets, Smart Accounts, and more.
 Same `SKILL.md` format works across tools.
 
 ## Available Skills
@@ -56,14 +72,14 @@ Then use the skills in your AI agent, for example:
 To install skills for your personal use in Claude Code:
 
 1. Add the marketplace:
-   ```
-   /plugin marketplace add fassko/flare-ai-skills
-   ```
+ ```
+ /plugin marketplace add fassko/flare-ai-skills
+ ```
 2. Install the skills:
-   ```
-   /plugin install flare-fassets@flare-fassets-skill
-   /plugin install flare-smart-accounts@flare-smart-accounts-skill
-   ```
+ ```
+ /plugin install flare-fassets@flare-fassets-skill
+ /plugin install flare-smart-accounts@flare-smart-accounts-skill
+ ```
 
 **Project Configuration**
 
@@ -74,15 +90,15 @@ To automatically provide these skills to everyone working in a repository, confi
   "enabledPlugins": {
     "flare-fassets@flare-fassets-skill": true,
     "flare-smart-accounts@flare-smart-accounts-skill": true
-  },
+ },
   "extraKnownMarketplaces": {
     "flare-ai-skills": {
       "source": {
         "source": "github",
         "repo": "fassko/flare-ai-skills"
-      }
-    }
-  }
+ }
+ }
+ }
 }
 ```
 
@@ -116,14 +132,14 @@ flare-ai-skills/
 ├── LICENSE                          # MIT
 ├── .gitignore
 └── skills/
-    ├── flare-fassets-skill/         # FAssets skill
-    │   ├── SKILL.md                 # Main skill instructions
-    │   ├── reference.md             # Flare Developer Hub links
-    │   └── scripts/
-    │       └── get-fxrp-address.ts  # Utility: get FXRP address at runtime
-    └── flare-smart-accounts-skill/  # Smart Accounts skill
-        ├── SKILL.md                 # Main skill instructions
-        └── reference.md             # Flare Developer Hub links
+ ├── flare-fassets-skill/         # FAssets skill
+ │   ├── SKILL.md                 # Main skill instructions
+ │   ├── reference.md             # Flare Developer Hub links
+ │   └── scripts/
+ │       └── get-fxrp-address.ts  # Utility: get FXRP address at runtime
+ └── flare-smart-accounts-skill/  # Smart Accounts skill
+ ├── SKILL.md                 # Main skill instructions
+ └── reference.md             # Flare Developer Hub links
 ```
 
 Each skill folder (with `SKILL.md` and `reference.md`) can be installed independently into the tool's skills path.
